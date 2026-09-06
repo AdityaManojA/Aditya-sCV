@@ -1,0 +1,173 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[left=0.55in, top=0.55in, right=0.55in, bottom=0.55in]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{xcolor}
+
+% Color definitions
+\definecolor{primaryColor}{RGB}{30, 64, 175} % Subtle deep blue
+\definecolor{textColor}{RGB}{31, 41, 55} % Charcoal
+\definecolor{linkColor}{RGB}{29, 78, 216}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=linkColor,
+    urlcolor=linkColor,
+    pdfauthor={Aditya Manoj},
+    pdftitle={Aditya Manoj - CV}
+}
+
+\usepackage{mathptmx} % Professional, clean serif font (Times-based)
+
+% Section styling
+\titleformat{\section}
+  {\normalfont\large\bfseries\color{primaryColor}}
+  {}{0em}
+  {}[\color{primaryColor}\titlerule]
+\titlespacing*{\section}{0pt}{10pt}{5pt}
+
+% Layout shortcuts
+\newcommand{\jobheading}[4]{
+  \noindent\textbf{#1} \hfill \textit{#2} \\
+  \noindent\textit{#3} \hfill \textit{#4} \\
+  \vspace{-4pt}
+}
+
+\newcommand{\projectheading}[3]{
+  \noindent\textbf{#1} \hfill \textit{#2} \\
+  \noindent\textit{#3} \\
+  \vspace{-4pt}
+}
+
+\setlist[itemize]{leftmargin=1.4em, noitemsep, topsep=2pt}
+
+\begin{document}
+\pagestyle{empty}
+\color{textColor}
+
+% Header Section
+\begin{center}
+    {\LARGE \bfseries \color{primaryColor} Aditya Manoj} \\
+    \vspace{3pt}
+    {\large Developer I -- DevOps Engineering} \\
+    \vspace{3pt}
+    \small
+    Thrissur, Kerala, India \ | \ +91 9947527296 \ | \ \href{mailto:adityamanoja@gmail.com}{adityamanoja@gmail.com} \\
+    \href{https://adityamanojportfolio.web.app}{adityamanojportfolio.web.app} \ | \ \href{https://github.com/AdityaManojA}{github.com/Aditya ManojA} \ | \ \href{https://linkedin.com/in/aditya-manoja-dev}{linkedin.com/in/aditya-manoja-dev}
+\end{center}
+
+\vspace{2pt}
+
+% Professional Profile
+\section*{Professional Profile}
+Dynamic Computer Science Engineer with 1.5+ years of hands-on experience spanning full-stack development, applied AI, and Agile delivery. Proven ability to architect and maintain large-scale digital systems including a PWA that processed 1.2 million Firestore reads and 2,275+ authenticated food coupon scans with 100\% uptime during an international conference. Led the development of a Government of Kerala-supported mobile app for school students and holds a Meta Full Stack Developer Specialization. Adept at Python scripting, Git-based workflows, and CI/CD fundamentals. Seeking to leverage full-stack engineering experience and strong scripting skills to contribute to DevOps automation and build/packaging pipelines at UST.
+
+% DevOps & Technical Skills
+\section*{DevOps \& Technical Skills}
+\begin{itemize}[label={$\bullet$}]
+    \item \textbf{Core DevOps-Relevant:} Python (OOP) | Git/GitHub | CI/CD Concepts | Bash Scripting | Docker Basics | Agile/Scrum
+    \item \textbf{Full-Stack \& Additional:} React / React Native | Node.js / Express | Firebase / MongoDB | TensorFlow / OpenCV | FastAPI / Django | HTML5 / CSS3
+\end{itemize}
+
+% Certifications & Specializations
+\section*{Certifications \& Specializations}
+\jobheading{Meta Full Stack Developer Specialization}{2024--2025}{Coursera (Meta)}{}
+\begin{itemize}[label={$\bullet$}]
+    \item Front-End \& Back-End from Scratch covering HTML/CSS, React, Python/Django, REST APIs, databases, and version control workflows.
+\end{itemize}
+
+% Professional Experience
+\section*{Professional Experience}
+
+\jobheading{Lead Developer (Technical Trainee)}{Aug 2025 -- Nov 2025}{Rajiv Gandhi Centre for Biotechnology -- IAN-2025 (\href{https://ian2025.in/}{ian2025.in})}{Thiruvananthapuram}
+\begin{itemize}[label={$\bullet$}]
+    \item Built and deployed a high-performance Progressive Web App (PWA) managing on-ground logistics for an international neuroscience conference achieving 100\% system reliability during peak hours.
+    \item Automated event workflows: handled 1.2 million Firestore reads and a digital authentication system that processed 2,275+ food coupon scans with zero manual errors.
+    \item Maintained secure operational access structures (Admin Code: \texttt{IAN/2025/J21}) to isolate sensitive logistical workflows and conference parameters during execution.
+    \item Developed and maintained Python scripts and automation routines to integrate multiple data streams, applying OOP principles throughout the codebase.
+    \item Operated within an Agile team environment, iterating rapidly on requirements from global neuroscientists and delivering a custom digital ecosystem end-to-end.
+\end{itemize}
+
+\vspace{5pt}
+
+\jobheading{Frontend \& DevOps Engineer (Contract)}{Apr 2026 -- Jun 2026}{Threadpath Collective (threadpathcollective.ca)}{Remote}
+\begin{itemize}[label={$\bullet$}]
+    \item Engineered a custom, responsive ``Spinning Loom'' navigation wheel using React and Framer Motion, utilizing dynamic polar coordinate math to handle precision rotation and typography alignment.
+    \item Resolved edge-case layout overflows on mobile devices by dynamically scaling SVGs relative to viewport width (\texttt{vw}), preventing text collision during high-end UI micro-interactions.
+    \item Managed full-stack production deployments and infrastructure using Firebase Hosting and Cloud Functions, optimizing separate pipelines for frontend compilation and backend API logic.
+    \item Diagnosed and successfully troubleshot complex domain-level CDN caching discrepancies across custom domains and \texttt{.web.app} endpoints to guarantee seamless live updates.
+\end{itemize}
+
+\vspace{5pt}
+
+\jobheading{Product Intern}{Jan 2025 -- Aug 2025}{Lascade LLP}{Kochi}
+\begin{itemize}[label={$\bullet$}]
+    \item Architected cross-platform features using React Native, contributing to a 25\% faster feature release cycle.
+    \item Refactored critical components to reduce platform-specific rendering issues by 15\%; used Git branching workflows and PR reviews daily.
+    \item Collaborated with the CI/CD pipeline for app builds, gaining practical exposure to automated build and release processes.
+\end{itemize}
+
+\vspace{100pt}
+
+\jobheading{App Developer \& Technical Mentor}{Oct 2023 -- Mar 2024}{Sarvodayam VHSS Arayampadam}{Thrissur}
+\begin{itemize}[label={$\bullet$}]
+    \item \textbf{Ente Naddu App (Govt. of Kerala):} Co-developed a Government of Kerala-supported mobile application for school students of Sarvodayam VHS School Arayampadam over a 5--6 month development cycle.
+    \item Provided full-spectrum technical mentorship covering requirement gathering, system architecture, feature implementation, troubleshooting, and best-practice guidance to the student development team.
+    \item Recognized by Jyothi Engineering College with a formal Certificate of Appreciation for exceptional guidance, social commitment, and contribution to a government-backed digital initiative.
+    \item Demonstrated end-to-end project ownership: from understanding objectives through to delivery and post-deployment support.
+\end{itemize}
+
+\vspace{5pt}
+
+\jobheading{AI/ML Intern}{Jul 2024 -- Oct 2024}{ICT Academy of Kerala}{Thiruvananthapuram}
+\begin{itemize}[label={$\bullet$}]
+    \item Engineered data preprocessing pipelines (Python) that boosted image classification accuracy by 10\% via advanced augmentation techniques.
+    \item Optimized facial recognition models using supervised learning, reducing false positives by 5\%.
+\end{itemize}
+
+\vspace{5pt}
+
+\jobheading{Full Stack Developer Intern}{May 2023 -- Jul 2023}{ICT Academy of Kerala}{Thiruvananthapuram}
+\begin{itemize}[label={$\bullet$}]
+    \item Architected a responsive MERN stack application, managing the full transition from local development to cloud deployment.
+    \item Integrated Firebase for real-time synchronization in multi-user environments, ensuring high data availability.
+\end{itemize}
+
+% Technical Projects
+\section*{Technical Projects}
+
+\projectheading{Ente Naddu App}{Government of Kerala Initiative}{}
+\begin{itemize}[label={$\bullet$}]
+    \item Mobile app developed for school students of Sarvodayam VHSS Arayampadam under a Govt. of Kerala digital program.
+    \item Led full development lifecycle -- 5--6 months -- with a student team, covering requirements, architecture, and delivery.
+\end{itemize}
+
+\vspace{4pt}
+
+\projectheading{Automated Review \& Attendance System}{}{}
+\begin{itemize}[label={$\bullet$}]
+    \item Built an end-to-end ML pipeline using Python and OpenCV for facial-recognition-based attendance logging. Achieved 92\% accuracy; reduced manual administrative overhead by over 95\%.
+\end{itemize}
+
+\vspace{4pt}
+
+\projectheading{Web-Based CSV to JSON Utility}{}{}
+\begin{itemize}[label={$\bullet$}]
+    \item Developed a high-performance client-side developer tool with zero data latency and complete data privacy reflecting a DevOps mindset of building reliable, reproducible utilities for developer workflows.
+\end{itemize}
+
+% Education
+\section*{Education}
+\jobheading{B.Tech, Computer Science \& Engineering}{2020 -- 2024}{Jyothi Engineering College}{Thrissur}
+
+% Achievements & Leadership
+\section*{Achievements \& Leadership}
+\begin{itemize}[label={$\bullet$}]
+    \item \textbf{Technical Lead - Indian Academy of Neurosciences Infrastructure (Oct 2022 -- Oct 2025):} Selected by the Rajiv Gandhi Centre for Biotechnology to spearhead the digital operating system for their international conference, supporting over 2,200 secure digital interactions with 100\% system uptime.
+    \item \textbf{Certificate of Appreciation - Government of Kerala / Jyothi Engineering College:} Formally recognised by Jyothi Engineering College for exceptional guidance and mentorship provided to school students of Sarvodayam VHSS Arayampadam during the Government of Kerala-supported Ente Naddu App project.
+    \item \textbf{Mentorship Recognition - RGCB:} Commended for technical excellence during lab training under Dr. Jackson James at the Rajiv Gandhi Centre for Biotechnology during the Indian Academy of Neurosciences Annual Meet.
+\end{itemize}
+
+\end{document}
